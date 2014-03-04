@@ -94,12 +94,10 @@ header h1 {
 	background-color: #36e7ea;
 	width: 20%;
 	float: left;
-	height: 100px;
 }
 
 .main-nav {
 	background-color: #4b4b4b; 
-	height: 100px;
 	width: 80%;
 }
 
@@ -117,17 +115,16 @@ header h1 {
 }
 
 #logo-container > a {
-	height: 70px;
-	max-width: 70px;
+	width: 56px;
 	display: block;
 	float: right;
-	margin: .9em 1em 0 0;
+	margin: 8px 30px;
+
 }
 
 #nav ul {
 	float: right;
-	margin-right: 4em;
-	margin-top: 2.3em;
+	margin: 1.5em 4em 1.5em 0;
 }
 
 #nav li {
@@ -182,5 +179,34 @@ main {
 
 section.skills > div.container > div.row > div {
 	z-index: 0;
+}
+
+/****WORK****/
+section.work > div.work-thumbs div.row1 > div:nth-child(1) {
+	background-color: red;
+}
+
+section.work > div.work-thumbs div.row2 > div:nth-child(1) {
+	background-color: green;
+}
+
+section.work > div.work-thumbs div.row3 > div:nth-child(1) {
+	background-color: yellow;
+}
+
+div.work-thumbs div div {
+	
+	background-color: blue;
+	border: 1px solid black;
+	display: inline-block;
+	width: 21%;
+	padding: 0px;
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+	transform: rotate(45deg);
+	}
+
+div.work-thumbs div img {
+	max-width: 100%;
 }
 

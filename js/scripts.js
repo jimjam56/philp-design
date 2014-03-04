@@ -7,7 +7,7 @@ $(window).resize(navHeight);
 function navHeight() {
 	var windowHeight = $(window).height();
 	$('#nav').css('top', + windowHeight + 'px');
-	var mainHeight = windowHeight + 100;
+	var mainHeight = windowHeight + 72;
 	console.log(windowHeight);
 	console.log(mainHeight);
 	$('#main').css('margin-top', + mainHeight +'px');
