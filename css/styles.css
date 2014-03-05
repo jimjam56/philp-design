@@ -182,31 +182,76 @@ section.skills > div.container > div.row > div {
 }
 
 /****WORK****/
-section.work > div.work-thumbs div.row1 > div:nth-child(1) {
-	background-color: red;
+
+div.work-thumbs {
+	margin-top: 120px;
 }
 
-section.work > div.work-thumbs div.row2 > div:nth-child(1) {
-	background-color: green;
+.row2, .row3 {
+	margin-top: -4.871794%;
 }
 
-section.work > div.work-thumbs div.row3 > div:nth-child(1) {
-	background-color: yellow;
+/*row 1*/
+section.work > div.work-thumbs div.row1 > a:nth-child(1) {
+	margin-left: 39.487179%;
+	margin-top: -4.871794%;
+}
+
+/*row 2*/
+
+section.work > div.work-thumbs div.row2 > a:nth-child(1) {
+	margin-left: 23.418803%;
+}
+section.work > div.work-thumbs div.row2 > a:nth-child(2) {
+	margin-left: 10.8547%;
+}
+
+/*row 3*/
+
+section.work > div.work-thumbs div.row3 > a:nth-child(1) {
+	margin-left: 7.179487%;
+}
+
+section.work > div.work-thumbs div.row3 > div, section.work > div.work-thumbs div.row3 > a:nth-child(3) {
+	margin-left: 10.8547%;
+}
+
+section.work > div.work-thumbs a {
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
 }
 
 div.work-thumbs div div {
-	
-	background-color: blue;
-	border: 1px solid black;
 	display: inline-block;
-	width: 21%;
+	width: 246px;
+	height: 246px;
+	width: 246px%;
 	padding: 0px;
+	overflow: hidden;
+	-moz-transform: rotate(45deg)
 	-ms-transform: rotate(45deg); /* IE 9 */
 	-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
 	transform: rotate(45deg);
+	vertical-align: top;
 	}
 
 div.work-thumbs div img {
-	max-width: 100%;
+	max-width: 145%;
+	margin-top: -23%;
+	margin-left: -23%;
+	-moz-transform: rotate(-45deg)
+	-ms-transform: rotate(-45deg); /* IE 9 */
+	-webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+	transform: rotate(-45deg);
+}
+
+div.work-thumbs div h1 {
+	position: absolute;
+	top: 42%;
+	left: 34%;
+	-ms-transform: rotate(-45deg); /* IE 9 */
+	-webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+	transform: rotate(-45deg);
 }
 
