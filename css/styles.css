@@ -337,7 +337,7 @@ footer {
 	background-color: #2b2b2b;
 	float: left;
 	width: 100%;
-	padding: 40px 0;
+	padding: 40px 0 0 0;
 }
 footer > nav > ul {
 width: 100%;
@@ -361,4 +361,32 @@ footer img {
 	display: block;
 	margin: 80px auto 0 auto;
 	width: 71px;
+}
+
+div.social-container {
+	background-color: #36e7ea;
+	padding: 40px 0;
+	width: 100%;
+}
+
+div.social-container ul {
+	text-align: center;
+	padding: 0;
+	width: 100%;
+}
+
+div.social-container ul li {
+	display: inline-block;
+}
+
+div.social-container a i {
+	color: #2b2b2b;
+	font-size: 2em;
+	padding: 0 10px;
+}
+
+footer p {
+	color: #2b2b2b;
+	font-size: .8em;
+	text-align: center;
 }
