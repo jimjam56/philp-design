@@ -19,7 +19,7 @@ p {
 }
 
 h1 {
-	color: #696868;
+	color: #333333;
 	font-family: 'colors_of_autumnregular', Arial, sans-serif;
 	font-size: 2.4em;
 	margin: 0.2em 0;
@@ -28,7 +28,7 @@ h1 {
 }
 
 h2 {
-	color: #696868;
+	color: #333333;
 	font-family: 'colors_of_autumnregular', Arial, sans-serif;
 	font-size: 1.875em;
 	margin: 0.2em 0 1.5em 0;
@@ -46,7 +46,7 @@ h3 {
 }
 
 section {
-	border-bottom: 2px solid #4b4b4b;
+	border-bottom: 2px solid #2e2e2e;
 	display: inline-block;
 	padding-top: 5em;
 	padding-bottom: 5em;
@@ -110,12 +110,12 @@ header h1 {
 }
 
 .main-nav {
-	background-color: #4b4b4b; 
+	background-color: #2e2e2e; 
 	width: 80%;
 }
 
 #nav > div.main-nav {
-	background-color: #4b4b4b;
+	background-color: #2e2e2e;
 	width: 80%;
 	float: right;
 }
@@ -269,7 +269,7 @@ div.title-container h1 {
 }
 
 section.work > div.work-thumbs a:hover div.title-container h1 {
-	color: rgba(100, 100, 100, 1);
+	color: rgba(50, 50, 50, 1);
 	transition: color .1s linear;
 	-moz-transition: color .1s linear;
 	-ms-transition: color .1s linear;
@@ -334,7 +334,7 @@ div.work-thumbs div h1.section-title {
 /****FOOTER****/
 
 footer {
-	background-color: #2b2b2b;
+	background-color: #1a1a1a;
 	float: left;
 	width: 100%;
 	padding: 40px 0 0 0;
@@ -380,13 +380,14 @@ div.social-container ul li {
 }
 
 div.social-container a i {
-	color: #2b2b2b;
+	color: #1a1a1a;
 	font-size: 2em;
 	padding: 0 10px;
 }
 
 footer p {
-	color: #2b2b2b;
+	color: #1a1a1a;
 	font-size: .8em;
+	margin: 0;
 	text-align: center;
 }
