@@ -183,8 +183,10 @@ section.skills > div.container > div.row > div {
 
 /****WORK****/
 
+/*initial position of group of thumbnails. amking up for the 45deg rotation*/
 div.work-thumbs {
 	margin-top: 120px;
+	margin-bottom: 63px;
 }
 
 .row2, .row3 {
@@ -220,6 +222,28 @@ section.work > div.work-thumbs a {
 	display: inline-block;
 	position: relative;
 	vertical-align: top;
+	transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+}
+
+section.work > div.work-thumbs a:after {
+	background-color: none;
+	content:"";
+	position: absolute;
+	top: 15px;
+	bottom: 15px;
+	left: 15px;
+	right: 15px;
+	transition: background .1s ease-out;
+	-moz-transition: background .1s ease-out;
+	-ms-transition: background .1s ease-out;
+	-webkit-transition: background .1s ease-out;
+}
+
+section.work > div.work-thumbs a:hover:after {
+	background-color: rgba(255, 255, 255, .7);
 }
 
 div.work-thumbs div div {
@@ -228,30 +252,47 @@ div.work-thumbs div div {
 	height: 246px;
 	width: 246px%;
 	padding: 0px;
+	position: relative;
 	overflow: hidden;
-	-moz-transform: rotate(45deg)
-	-ms-transform: rotate(45deg); /* IE 9 */
-	-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
-	transform: rotate(45deg);
 	vertical-align: top;
+
 	}
+
+
 
 div.work-thumbs div img {
 	max-width: 145%;
-	margin-top: -23%;
+	margin-top: -25%;
 	margin-left: -23%;
-	-moz-transform: rotate(-45deg)
+	min-width: 360px;
+	min-height: 360px;
+	-moz-transform: rotate(-45deg);
 	-ms-transform: rotate(-45deg); /* IE 9 */
 	-webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
 	transform: rotate(-45deg);
 }
 
-div.work-thumbs div h1 {
+section.work > div > div > a > div > h1 {
 	position: absolute;
 	top: 42%;
 	left: 34%;
-	-ms-transform: rotate(-45deg); /* IE 9 */
-	-webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+	opacity: 0;
+	z-index: 1;
 	transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+
+section.work > div.work-thumbs a:hover h1 {
+	opacity: 1;
+}
+
+div.work-thumbs div h1.work-title {
+	opacity: 1;
+	transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
 }
 
