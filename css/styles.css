@@ -8,6 +8,7 @@ html, html a, button {
 }
 
 a:hover {
+	color: #ffdf61;
 	text-decoration: none;
 }
 
