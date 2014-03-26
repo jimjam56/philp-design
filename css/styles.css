@@ -13,9 +13,10 @@ a:hover {
 }
 
 p {
-	color: #aeadad;
+	color: #8c8b8b;
 	font-family: 'Comfortaa', sans-serif;
 	font-size: 1.25em;
+	font-weight: 700;
 	line-height: 2em;
 }
 
@@ -26,6 +27,26 @@ h1 {
 	margin: 0.2em 0;
 	line-height: 1.3em;
 	text-align: center;
+}
+
+hr {
+	border-top: 1px solid #818181;
+}
+
+.work-detail a {
+	color: #8c8b8b;
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 1.4em;
+	line-height: 2em;
+}
+
+.work-detail a:hover {
+	color: #36e7ea;
+}
+
+.work-detail h1 {
+	font-size: 3em;
+	text-align: left;
 }
 
 h2 {
@@ -44,6 +65,15 @@ h3 {
 	margin: 0.5em 0 1.5em 0;
 	line-height: 1.3em;
 	text-align: center;
+}
+
+h4 {
+	color: #cdcdcc;
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 1.5em;
+	line-height: 1em;
+	margin-top: 0;
+	text-transform: uppercase;
 }
 
 section {
@@ -85,15 +115,7 @@ header h1 {
 	width: 100%;
 }
 
-#triangle {
-	margin: 0 auto;
-	margin-top: 10%;
-	width: 0; 
-	height: 0; 
-	border-bottom: 120px solid green; 
-	border-left: 60px solid transparent; 
-	border-right: 60px solid transparent; 
-}
+
 /****TOP NAVIGATION****/
 
 #home-nav {
@@ -163,7 +185,6 @@ header h1 {
 /****MAIN****/
 
 main {
-	background: #fff;
 	position: relative;
 }
 
@@ -402,4 +423,18 @@ footer p {
 	font-size: .8em;
 	margin: 0;
 	text-align: center;
+}
+
+/********WORK DETAILS PAGES********/
+
+body > main > section.col-md-12 {
+	padding-bottom: 0px;
+}
+
+.work-detail img {
+	width: 100%;
+}
+
+.work-detail section {
+	border: none;
 }
