@@ -6,9 +6,9 @@ $(window).resize(navHeight);
 
 function navHeight() {
 	var windowHeight = $(window).height();
-	$('#nav').css('top', + windowHeight + 'px');
+	$('#home-nav').css('top', + windowHeight + 'px');
 	var mainHeight = windowHeight + 72;
-	$('#main').css('margin-top', + mainHeight +'px');
+	$('#home-main').css('margin-top', + mainHeight +'px');
 }
 
 
@@ -21,9 +21,9 @@ function stickyNav() {
 	var windowHeight = $(window).height();
 	var scrollTopDistance = $(window).scrollTop();
 	if (scrollTopDistance > windowHeight) {
-		$('#nav').css({'position':'fixed','top':'0px'});
+		$('#home-nav').css({'position':'fixed','top':'0px'});
 	}
 	else {
-		$('#nav').css({'position':'absolute','top':windowHeight+'px'});
+		$('#home-nav').css({'position':'absolute','top':windowHeight+'px'});
 	}
 }
