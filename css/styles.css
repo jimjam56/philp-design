@@ -438,3 +438,28 @@ body > main > section.col-md-12 {
 .work-detail section {
 	border: none;
 }
+
+.work-detail p {
+	margin-bottom: 3em;
+}
+
+body > main > section.col-md-6.col-md-offset-1 > img {
+border-bottom: 1px solid #222222;
+padding: 1.5em 0;
+}
+
+body > main > section.col-md-6.col-md-offset-1 > img:first-child {
+padding: 0 0 1.5em 0;
+}
+
+body > main > section.col-md-6.col-md-offset-1 > img:last-child {
+border-bottom: none;
+padding: 1.5em 0 0 0;
+}
+
+
+
+
+
+
+
