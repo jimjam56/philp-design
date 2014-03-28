@@ -443,6 +443,8 @@ body > main > section.col-md-12 {
 	margin-bottom: 3em;
 }
 
+
+/***Dividing lines on work deets imgs***/
 body > main > section.col-md-6.col-md-offset-1 > img {
 border-bottom: 1px solid #222222;
 padding: 1.5em 0;
