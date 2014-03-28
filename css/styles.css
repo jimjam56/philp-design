@@ -426,6 +426,10 @@ footer p {
 }
 
 /********WORK DETAILS PAGES********/
+#page-nav {
+	z-index: 5;
+	position: relative;
+}
 
 body > main > section.col-md-12 {
 	padding-bottom: 0px;
