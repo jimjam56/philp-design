@@ -275,6 +275,14 @@ div.work-thumbs {
 	margin-top: -4.871794%;
 }
 
+.work-thumbs h1 {
+	font-size: 20px;
+}
+
+.work-thumbs h1.section-title {
+	font-size: 46px;
+}
+
 /**aligning all thumbs for diamond pattern
 row 1*/
 section.work > div.work-thumbs div.row1 > a:nth-child(1) {
@@ -409,7 +417,7 @@ div.work-thumbs div h1.section-title {
 	text-transform: uppercase;
 	font-size: 2em;
 	margin: 2em auto 0 auto;
-	padding: .6em 1.5em;
+	padding: .6em 1.5em .4em 1.5em;
 }
 
 .btn-default:hover {
