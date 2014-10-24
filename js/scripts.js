@@ -1,9 +1,12 @@
 
+$(document).ready(function(){
+
+
 //determines at which point the navigation will stick.
 navHeight();
 $(window).resize(navHeight);
  	
-
+$('body').fadeIn();
 function navHeight() {
 	var windowHeight = $(window).height();
 	$('#home-nav').css('top', + windowHeight + 'px');
@@ -27,3 +30,4 @@ function stickyNav() {
 		$('#home-nav').css({'position':'absolute','top':windowHeight+'px'});
 	}
 }
+});

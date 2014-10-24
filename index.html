@@ -10,20 +10,20 @@
 
 	<link rel="stylesheet" href="css/normalize.css" type="text/css"/>
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
-	<link rel="stylesheet" href="css/fonts/colors-of-autumn.css" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:700italic' rel='stylesheet' type='text/css'>
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/styles.css" type="text/css"/>
 
 </head>
 
 <body>
 	<header id="header" role="banner">
-		<div>
-			<div>
-				<img src="img/logo.png"/>
-				<h1>James Philp<br>Designer</h1>
-			</div>
+		<div id="overlay"></div>
+		<div id="title-container">
+			<img src="img/logo.svg"/>
+			<h1>James Philp<br>Designer/Developer</h1>
 		</div>
 	</header>
 	<nav id="home-nav">
@@ -49,17 +49,20 @@
 	<main id="home-main">
 		<section class="introduction">
 			<div class="container">
-				<h1>heya.</h1>
-				<p>This is my formal introduction. I am a designer based out of Spokane, Washington. I like doing work in both print, and web design/development. I also love to write music; I try to play as often as I can.</p>
+				<div class="col-md-5">
+					<h1>Lets make something awesome</h1>
+				</div>
+				<div class="col-md-7">
+					<p>This is my formal introduction. I am a designer based out of Spokane, Washington. I like doing work in both print, and web design/development. I also love to write music; I try to play as often as I can.</p>
+				</div>
 			</div>
 		</section>	
 		<section class="skills">
 			<div class="container">
-				<h1>what i can do for you</h1>
 				<div class="row">
 					<div class="col-md-4">
 						<i class="fa fa-bolt fa-lg"></i>
-						<h2>graphics</h2>
+						<h2>Logo/Identity</h2>
 						<p>dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosa</p>
 					</div>
 					<div class="col-md-4">
@@ -69,7 +72,7 @@
 					</div>
 					<div class="col-md-4">
 						<i class="fa fa-wrench fa-lg"></i>
-						<h2>web development</h2>
+						<h2>web dev</h2>
 						<p>dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosa</p>
 
 					</div>
@@ -158,8 +161,10 @@
 			</div>
 		</section>
 		<section class="contact">
-			<h1>interested in working with me?</h1>
-			<button type="button" class="btn btn-default">say hi!</button>
+			<div class="container">
+				<h1>interested in working with me?</h1>
+				<button type="button" class="btn btn-default">say hi!</button>
+			</div>
 		</section>
 	</main>
 	<footer>
