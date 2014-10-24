@@ -357,7 +357,7 @@ div.title-container h1 {
 }
 
 section.work > div.work-thumbs a:hover div.title-container h1 {
-	color: rgba(254, 255, 148, 1);
+	color: rgba(100,100,100, 1);
 	transition: color .1s linear;
 	-moz-transition: color .1s linear;
 	-ms-transition: color .1s linear;
@@ -376,7 +376,7 @@ div.title-container {
 }
 
 section.work > div.work-thumbs a:hover div.title-container {
-	background-color: rgba(255, 152, 132, .9);
+	background-color: rgba(252, 235, 116, 0.8);
 	transition: background .1s linear;
 	-moz-transition: background .1s linear;
 	-ms-transition: background .1s linear;
