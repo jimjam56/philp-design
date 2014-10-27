@@ -223,6 +223,13 @@ main {
 	color: #70b9bf;
 	font-size: 70px;
 }
+
+@media (max-width: 1199px) {
+	.introduction h1 {
+		font-size: 62px;
+	}
+}
+
 .introduction p {
 	font-size: 1.7em;
 	line-height: 1.5em;
@@ -264,11 +271,24 @@ section.skills > div.container > div.row > div {
 }
 
 /****WORK****/
-
+#work {
+	text-align: center;
+}
+.work-thumbs:before {
+	display: inline-block;
+	text-align: center;
+	height: 96.8%;
+	width: 80%;
+	background: #D0FCFD;
+	position: absolute;
+	top: 0;
+	left: 117px;
+}
 /*initial position of group of thumbnails. making up for the 45deg rotation*/
 div.work-thumbs {
 	margin-top: 120px;
 	margin-bottom: 63px;
+	position: relative;
 }
 
 .row2, .row3 {
@@ -286,24 +306,16 @@ div.work-thumbs {
 /**aligning all thumbs for diamond pattern
 row 1*/
 section.work > div.work-thumbs div.row1 > a:nth-child(1) {
-	margin-left: 39.487179%;
 	margin-top: -4.871794%;
 }
 
 /*row 2*/
 
-section.work > div.work-thumbs div.row2 > a:nth-child(1) {
-	margin-left: 23.418803%;
-}
 section.work > div.work-thumbs div.row2 > a:nth-child(2) {
 	margin-left: 10.8547%;
 }
 
 /*row 3*/
-
-section.work > div.work-thumbs div.row3 > a:nth-child(1) {
-	margin-left: 7.179487%;
-}
 
 section.work > div.work-thumbs div.row3 > div, section.work > div.work-thumbs div.row3 > a:nth-child(3) {
 	margin-left: 10.8547%;
@@ -318,16 +330,27 @@ section.work > div > div > a > div, div.section-title-container {
 	position: relative;
 	overflow: hidden;
 	vertical-align: top;
-	
 }
 
 div.section-title-container {
 	border: none;
+	background: #fff;
+	transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+}
+
+div.section-title-container h1 {
+	transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg); /* IE 9 */
+	-webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
 }
 
 
 section.work > div.work-thumbs a {
-	border: 1px solid rgb(223, 223, 223);
+	border: 1px solid rgb(165, 165, 165);
 	box-sizing: content-box;
 	display: inline-block;
 	position: relative;
@@ -342,7 +365,7 @@ section.work > div.work-thumbs a {
 div.title-container h1 {
 	color: rgba(100, 100, 100, 0);
 	display: table-cell;
-	line-height: .9em;
+	line-height: 1em;
 	margin-top: 40%;
 	transform: rotate(-45deg);
 	-moz-transform: rotate(-45deg);
@@ -386,8 +409,8 @@ section.work > div.work-thumbs a:hover div.title-container {
 /*thumb background img styling*/
 div.work-thumbs div img {
 	max-width: 145%;
-	margin-top: -25%;
-	margin-left: -23%;
+	margin-top: -23%;
+	margin-left: -22%;
 	min-width: 360px;
 	min-height: 360px;
 	-moz-transform: rotate(-45deg);
@@ -400,6 +423,47 @@ div.work-thumbs div img {
 div.work-thumbs div h1.section-title {
 	margin-top: 40%;
 	text-align: center;
+}
+
+@media (max-width: 1199px) { /*small desktop breakpoint*/
+
+	div.work-thumbs {
+		min-height: 310px;
+		min-width: 310px;
+	}
+
+	div.work-thumbs div img {
+		min-width: 322px;
+		min-height: 322px;
+	}
+
+	div.title-container {
+		width: 183px;
+		height: 182px;
+		top: 17px;
+		left: 16px;
+	}
+
+	section.work > div > div > a > div, div.section-title-container {
+		height: 216px;
+		width: 216px;
+	}
+
+	/**aligning all thumbs for diamond pattern
+	row 1*/
+
+	/*row 2*/
+
+	section.work > div.work-thumbs div.row2 > a:nth-child(2) {
+		margin-left: 10.8547%;
+	}
+
+	/*row 3*/
+
+	section.work > div.work-thumbs div.row3 > div, section.work > div.work-thumbs div.row3 > a:nth-child(3) {
+		margin-left: 10.8547%;
+	}
+
 }
 
 /****BOTTOM CONTACT SECTION****/
@@ -495,6 +559,14 @@ footer p {
 
 body > main > section.col-md-12 {
 	padding-bottom: 0px;
+}
+
+body > main > section.col-md-12 h2 {
+	text-align: left;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 600;
+	font-size: 1.8em;
+	font-style: italic;
 }
 
 .work-detail img {
