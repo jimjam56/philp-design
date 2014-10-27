@@ -14,6 +14,10 @@ body {
 	display: none;
 }
 
+button:focus, button:active {
+	outline: none !important;
+}
+
 a:hover {
 	color: #ffdf61;
 	text-decoration: none;
@@ -481,7 +485,11 @@ div.work-thumbs div h1.section-title {
 	text-transform: uppercase;
 	font-size: 2em;
 	margin: 2em auto 0 auto;
-	padding: .6em 1.5em .4em 1.5em;
+	padding: 0;
+}
+.btn-default a {
+	padding: 14px 26px 10px 26px;
+	display: block;
 }
 
 .btn-default:hover {
