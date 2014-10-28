@@ -14,7 +14,13 @@ function navHeight() {
 	$('#home-main').css('margin-top', + mainHeight +'px');
 }
 
-
+$('.down-arrow').click(function(e){
+	e.preventDefault();
+	var scrollDistance = $(window).height() + 1;
+	$("html, body").animate({
+			scrollTop: scrollDistance + 'px'
+		}, 800);
+});
 //check to see if nav can stick to top after header img is scrolled past
 $(window).scroll(function(e) {
 	stickyNav();

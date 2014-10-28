@@ -149,6 +149,33 @@ header h1 {
   vertical-align: middle;
 	width: 40%;
 }
+
+.down-arrow {
+	position: absolute;
+	bottom: 0;
+	left: 48%;
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 55px 50px 55px;
+	border-color: transparent transparent #fff transparent;
+	transition: all 0.2s ease;
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-ms-transition: all 0.1s ease;
+}
+
+.arrow-wrap:hover .down-arrow {
+	border-color: transparent transparent #FFD6B3 transparent;
+}
+
+.down-arrow img {
+	left: -14px;
+	width: 30px;
+	top: 20px;
+	position: absolute;
+}
 /****TOP NAVIGATION****/
 
 #home-nav {
@@ -606,8 +633,25 @@ padding: 1.5em 0 0 0;
 }
 
 
+/********ABOUT SECTION********/
 
+.about .col-md-6 {
+	margin-bottom: 20px;
+	border: 0;
+}
+.about .col-md-7 img {
+	width: 100%;
+}
 
+.about h2 {
+	text-align: right;
+}
 
+.about ul {
+	list-style: none;
+}
 
+.about section:last-child {
+	border: none;
+}
 
