@@ -651,7 +651,18 @@ padding: 1.5em 0 0 0;
 	list-style: none;
 }
 
-.about section:last-child {
+.about section:last-child, .contact section:last-child {
 	border: none;
 }
+
+/********CONTACT SECTION********/
+h1.contact-page {
+	text-align: left;
+}
+
+.contact h2 {
+	text-align: left;
+	margin-bottom: 20px;
+}
+
 
