@@ -106,7 +106,7 @@ section {
 header h1 {
 	color: #fff;
 	font-family: 'Josefin Slab', serif;
-	margin: -20px 0 0 20%;
+	margin: -22px 0 0 10%;
 }
 
 #header {
@@ -141,10 +141,10 @@ header h1 {
 	right: 50%;
 }
 #title-container img {
-	width: 100%;
+	width: 70%;
 	max-width: 610px;
 	position: relative;
-	margin: 2em 0 0 20%;
+	margin: 2em 0 0 6%;
 	opacity: .6;
 }
 #title-container {
@@ -152,7 +152,7 @@ header h1 {
 	position: relative;
 	display: inline-block;
   vertical-align: middle;
-	width: 40%;
+	width: 70%;
 }
 
 .down-arrow {
@@ -878,6 +878,29 @@ body > main.contact > section:nth-child(2) > div > p > a:hover {
 	footer img {
 		margin-top: 40px;
 	}
+	/*mobile header img*/
+	#overlay {
+		right: -40%;
+	}
+
+	#title-container {
+		text-align: center;
+		width: 100%;
+	}
+
+	#title-container img {
+		display: inline-block;
+		margin: 0;
+		margin-top: 15px;
+		width: 70%;
+	}
+
+	#title-container h1 {
+		display: inline-block;
+		font-size: 34px;
+		margin: -15px 0 35px 0;
+		width: 70%;
+	}
 }
 
 @media (max-width: 516px) {
@@ -902,30 +925,6 @@ body > main.contact > section:nth-child(2) > div > p > a:hover {
 	.work-thumbs:before {
 		left: 20%;
 		width: 60%;
-	}
-
-	/*mobile header img*/
-	#overlay {
-		right: -40%;
-	}
-
-	#title-container {
-		text-align: center;
-		width: 100%;
-	}
-
-	#title-container img {
-		display: inline-block;
-		margin: 0;
-		margin-top: 15px;
-		width: 70%;
-	}
-
-	#title-container h1 {
-		display: inline-block;
-		font-size: 34px;
-		margin: -15px 0 35px 0;
-		width: 70%;
 	}
 
 	/*mobile introduction section*/
