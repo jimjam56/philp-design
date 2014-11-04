@@ -883,7 +883,12 @@ body > main.contact > section:nth-child(2) > div > p > a:hover {
 	}
 	/*mobile header img*/
 	#overlay {
-		right: -40%;
+		right: 0%;
+			-webkit-transform: skew(0deg);
+		-moz-transform: skew(0deg);
+		-ms-transform: skew(0deg);
+		-o-transform: skew(0deg);
+		transform: skew(0deg);
 	}
 
 	#title-container {
