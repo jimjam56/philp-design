@@ -247,7 +247,7 @@ header h1 {
 }
 
 #home-nav ul li a:hover, #page-nav ul li a:hover, #mobile-nav ul li a:hover {
-	color: #fff222;
+	color: #ffdf61;
 	text-decoration: none;
 }
 
@@ -262,12 +262,6 @@ main {
 .introduction h1 {
 	color: #70b9bf;
 	font-size: 70px;
-}
-
-@media (max-width: 1199px) {
-	.introduction h1 {
-		font-size: 62px;
-	}
 }
 
 .introduction p {
@@ -523,47 +517,6 @@ div.work-thumbs div h1.section-title {
 }
 
 
-@media (max-width: 1199px) { /*small desktop breakpoint*/
-
-	div.work-thumbs {
-		min-height: 310px;
-		min-width: 310px;
-	}
-
-	div.work-thumbs div img {
-		min-width: 322px;
-		min-height: 322px;
-	}
-
-	div.title-container {
-		width: 183px;
-		height: 182px;
-		top: 17px;
-		left: 16px;
-	}
-
-	section.work > div > div > a > div, div.section-title-container {
-		height: 216px;
-		width: 216px;
-	}
-
-	/**aligning all thumbs for diamond pattern
-	row 1*/
-
-	/*row 2*/
-
-	section.work > div.work-thumbs div.row2 > a:nth-child(2) {
-		margin-left: 10.8547%;
-	}
-
-	/*row 3*/
-
-	section.work > div.work-thumbs div.row3 > div, section.work > div.work-thumbs div.row3 > a:nth-child(3) {
-		margin-left: 10.8547%;
-	}
-
-}
-
 /****BOTTOM CONTACT SECTION****/
 
 .contact h1 {
@@ -616,6 +569,10 @@ padding: 0 0 0 23px;
 	font-family: 'Muli', sans-serif;
 	font-weight: 300;
 	padding: 0 50px;
+}
+
+#footer-nav > ul > li > a:hover {
+	color: #ffdf61;
 }
 
 footer img {
@@ -710,7 +667,12 @@ padding: 1.5em 0 0 0;
 	width: 100%;
 }
 
+.about h1 {
+	color: #70b9bf;
+}
+
 .about h2 {
+	color: #15191A;
 	text-align: right;
 }
 
@@ -718,12 +680,24 @@ padding: 1.5em 0 0 0;
 	list-style: none;
 }
 
+.about section, .contact section {
+	border-bottom: 2px solid #ff9884;
+}
+
 .about section:last-child, .contact section:last-child {
 	border: none;
 }
 
+.about h3 {
+	color: #15191A;
+	font-size: 1.3em;
+	text-align: left;
+	margin: 40px 0 10px 0;
+}
+
 /********CONTACT SECTION********/
 h1.contact-page {
+	color: #70b9bf;
 	text-align: left;
 }
 
@@ -732,14 +706,56 @@ h1.contact-page {
 	margin-bottom: 20px;
 }
 
+body > main.contact > section:nth-child(2) > div > p > a {
+	color: #548E93;
+}
+
+body > main.contact > section:nth-child(2) > div > p > a:hover {
+	color: #ffdf61;
+}
+
 @media (max-width: 1199px) {
-	section.work > div.work-thumbs a div.title-container h1 {
-		color: rgba(250,250,250, 1);
+
+		.introduction h1 {
+		font-size: 62px;
+	}	
+	div.work-thumbs {
+		min-height: 310px;
+		min-width: 310px;
 	}
 
-	section.work > div.work-thumbs a div.title-container {
-		background-color: rgba(20, 20, 20, 0.6);
+	div.work-thumbs div img {
+		min-width: 322px;
+		min-height: 322px;
 	}
+
+	div.title-container {
+		width: 183px;
+		height: 182px;
+		top: 17px;
+		left: 16px;
+	}
+
+	section.work > div > div > a > div, div.section-title-container {
+		height: 216px;
+		width: 216px;
+	}
+
+	/**aligning all thumbs for diamond pattern
+	row 1*/
+
+	/*row 2*/
+
+	section.work > div.work-thumbs div.row2 > a:nth-child(2) {
+		margin-left: 10.8547%;
+	}
+
+	/*row 3*/
+
+	section.work > div.work-thumbs div.row3 > div, section.work > div.work-thumbs div.row3 > a:nth-child(3) {
+		margin-left: 10.8547%;
+	}
+
 }
 
 /*Tablet layout breakpoint*/
@@ -797,6 +813,13 @@ h1.contact-page {
 	}
 
 	/*Work thumbs mobile/tablet*/
+	section.work > div.work-thumbs a div.title-container h1 {
+		color: rgba(250,250,250, 1);
+	}
+
+	section.work > div.work-thumbs a div.title-container {
+		background-color: rgba(20, 20, 20, 0.6);
+	}
 
 	div.work-thumbs {
 		display: none;
@@ -828,6 +851,19 @@ h1.contact-page {
 
 }
 
+@media (max-width: 991px) {
+	.about h1 {
+		margin: 1.2em 0 0.2em 0;
+	}
+	.about h2 {
+		text-align: left;
+	}
+	.about ul {
+		padding: 0;
+	}
+}
+
+/*keep navigations from breaking*/
 @media (max-width: 560px) {
 	#mobile-nav > div.main-nav > ul > li:nth-child(1), #page-nav > div.main-nav > ul > li:nth-child(1) {
 		display: none;
@@ -841,6 +877,13 @@ h1.contact-page {
 	}
 	footer img {
 		margin-top: 40px;
+	}
+}
+
+@media (max-width: 516px) {
+	section.work > div.work-thumbs div.row2 > a:nth-child(2) {
+		margin-left: 0;
+		margin-top: 10px;
 	}
 }
 
@@ -903,11 +946,6 @@ h1.contact-page {
 	/*Work section*/
 	#work {
 		padding-top: 0;
-	}
-
-	section.work > div.work-thumbs div.row2 > a:nth-child(2) {
-		margin-left: 0;
-		margin-top: 10px;
 	}
 
 	.row1 {
