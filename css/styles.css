@@ -751,6 +751,29 @@ h1.contact-page {
 	#mobile-nav {
 		display: block;
 	}
+	#mobile-nav ul, #page-nav ul  {
+		float: left;
+		text-align: center;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	#mobile-nav ul li, #page-nav ul li {
+		display: inline-block;
+		float: none;
+	}
+	#mobile-nav ul li a, #page-nav ul li a {
+		display: block;
+		padding: 20px 30px;
+	}
+	#logo-container {
+		width: 30%;
+		height: 70px;
+	}
+	#mobile-nav > div.main-nav, #page-nav > div.main-nav 	{
+		height: 70px;
+		width: 70%;
+	}
 	#home-main {
 		margin-top: 0 !important;
 	}
@@ -768,6 +791,9 @@ h1.contact-page {
 	}
 	#title-container img {
 		width: 80%;
+	}
+	.arrow-wrap {
+		display: none;
 	}
 
 	/*Work thumbs mobile/tablet*/
@@ -802,22 +828,99 @@ h1.contact-page {
 
 }
 
+@media (max-width: 560px) {
+	#mobile-nav > div.main-nav > ul > li:nth-child(1), #page-nav > div.main-nav > ul > li:nth-child(1) {
+		display: none;
+	}
+	#footer-nav > ul > li {
+		margin-bottom: 14px;
+		width: 100%;
+	}
+	#footer-nav > ul {
+		padding: 0;
+	}
+	footer img {
+		margin-top: 40px;
+	}
+}
 
 @media (max-width: 420px) {
+	
+	/*Mobile nav layout*/
+	
+	#mobile-nav ul li a, #page-nav ul li a {
+		padding: 20px 14px;
+	}
+
+	#logo-container > a {
+		margin: 8px 20px;
+	}
+
 	.work-thumbs:before {
 		left: 20%;
 		width: 60%;
+	}
+
+	/*mobile header img*/
+	#overlay {
+		right: -40%;
+	}
+
+	#title-container {
+		text-align: center;
+		width: 100%;
+	}
+
+	#title-container img {
+		display: inline-block;
+		margin: 0;
+		margin-top: 15px;
+		width: 70%;
+	}
+
+	#title-container h1 {
+		display: inline-block;
+		font-size: 34px;
+		margin: -15px 0 35px 0;
+		width: 70%;
+	}
+
+	/*mobile introduction section*/
+
+	.introduction h1 {
+		font-size: 42px;
+		margin-bottom: 50px;
+	}
+
+	.skills h2 {
+		margin-top: 60px;	
+	}
+
+	#home-main > section.skills > div > div > div:nth-child(1) > h2 {
+		margin-top: 5px;
+	}
+	
+	/*Work section*/
+	#work {
+		padding-top: 0;
 	}
 
 	section.work > div.work-thumbs div.row2 > a:nth-child(2) {
 		margin-left: 0;
 		margin-top: 10px;
 	}
+
 	.row1 {
 		margin-top: 10px;
 	}
+
 	.row2 {
 		margin-top: 10px;
+	}
+
+	/*Footer*/
+	#footer-nav ul {
+		padding: 0;
 	}
 }
 
