@@ -3,7 +3,7 @@
 html, html a, button {
 	font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
@@ -29,6 +29,7 @@ p {
 	font-size: 1.25em;
 	font-weight: 700;
 	line-height: 2em;
+	font-weight: normal;
 }
 
 h1 {
@@ -129,6 +130,10 @@ header h1 {
 #overlay {
 	background: rgba(0,0,0,.5) !important;
 	-webkit-transform: skew(30deg);
+	-moz-transform: skew(30deg);
+	-ms-transform: skew(30deg);
+	-o-transform: skew(30deg);
+	transform: skew(30deg);
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -186,6 +191,10 @@ header h1 {
 	z-index: 2;
 }
 
+#mobile-nav {
+	display: none;
+}
+
 #logo-container {
 	background-color: #ff9884;
 	width: 20%;
@@ -197,7 +206,7 @@ header h1 {
 	width: 80%;
 }
 
-#home-nav > div.main-nav, #page-nav > div.main-nav {
+#home-nav > div.main-nav, #page-nav > div.main-nav, #mobile-nav > div.main-nav {
 	background-color: #2e2e2e;
 	width: 80%;
 	float: right;
@@ -218,18 +227,18 @@ header h1 {
 
 }
 
-#home-nav ul, #page-nav ul {
+#home-nav ul, #page-nav ul, #mobile-nav ul {
 	float: right;
 	margin: 1.5em 4em 1.5em 0;
 }
 
-#home-nav li, #page-nav li {
+#home-nav li, #page-nav li, #mobile-nav li {
 	display: block;
 	position: relative;
 	float: left;
 }
 
-#home-nav ul li a, #page-nav ul li a {
+#home-nav ul li a, #page-nav ul li a, #mobile-nav ul li a {
 	color: #fff;
 	font-family: 'Muli', sans-serif;
 	font-size: 1.5em;
@@ -237,7 +246,7 @@ header h1 {
 	padding: 25px;
 }
 
-#home-nav ul li a:hover, #page-nav ul li a:hover {
+#home-nav ul li a:hover, #page-nav ul li a:hover, #mobile-nav ul li a:hover {
 	color: #fff222;
 	text-decoration: none;
 }
@@ -322,6 +331,10 @@ div.work-thumbs {
 	position: relative;
 }
 
+div.work-thumbs.mobile-work-thumbs {
+	display: none;
+}
+
 .row2, .row3 {
 	margin-top: -4.871794%;
 }
@@ -364,7 +377,7 @@ section.work > div > div > a > div, div.section-title-container {
 }
 
 div.section-title-container {
-	border: none;
+	border: 1px solid rgb(165, 165, 165);
 	background: #fff;
 	transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
@@ -455,6 +468,60 @@ div.work-thumbs div h1.section-title {
 	margin-top: 40%;
 	text-align: center;
 }
+
+/*Set up div background img. This method was used to help fix webkit border bug(img covers part of border)*/
+.work-thumbs a {
+	overflow: hidden;
+}
+.work-thumbs a:before {
+	content: "";
+	position: absolute;
+	width: 200%;
+	height: 200%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 80%;
+	top: -50%;
+	left: -50%;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.work-thumbs a[href="seven2.html"]:before {
+	background-image: url("../img/seven2-thumb.png");
+}
+
+.work-thumbs a[href="mika.html"]:before {
+	background-image: url("../img/mika-thumb.png");
+}
+
+.work-thumbs a[href="fat-daddios.html"]:before {
+	background-image: url("../img/fat-dads-thumb.png");
+}
+
+.work-thumbs a[href="halftone.html"]:before {
+	background-image: url("../img/halftone-thumb.png");
+}
+
+.work-thumbs a[href="moto-graphics.html"]:before {
+	background-image: url("../img/graphics-thumb.png");
+}
+
+.work-thumbs a[href="thirty-bands.html"]:before {
+	background-image: url("../img/30-bands-thumb.png");
+}
+
+.work-thumbs a[href="jacks-note.html"]:before {
+	background-image: url("../img/jack-thumb.png");
+}
+
+.work-thumbs a[href="undead.html"]:before {
+	background-image: url("../img/undead-thumb.png");
+}
+
 
 @media (max-width: 1199px) { /*small desktop breakpoint*/
 
@@ -587,7 +654,7 @@ footer p {
 }
 
 /********WORK DETAILS PAGES********/
-#page-nav {
+#page-nav, #mobile-nav {
 	z-index: 5;
 	position: relative;
 }
@@ -664,5 +731,96 @@ h1.contact-page {
 	text-align: left;
 	margin-bottom: 20px;
 }
+
+@media (max-width: 1199px) {
+	section.work > div.work-thumbs a div.title-container h1 {
+		color: rgba(250,250,250, 1);
+	}
+
+	section.work > div.work-thumbs a div.title-container {
+		background-color: rgba(20, 20, 20, 0.6);
+	}
+}
+
+/*Tablet layout breakpoint*/
+
+@media screen and (max-width: 1030px) {
+	#home-nav {
+		display: none !important;
+	}
+	#mobile-nav {
+		display: block;
+	}
+	#home-main {
+		margin-top: 0 !important;
+	}
+	#header {
+		position: relative;
+	}
+	#overlay {
+		right: 30%;
+	}
+	header h1 {
+		margin-bottom: 18%;
+	}
+	#title-container {
+		width: 50%;
+	}
+	#title-container img {
+		width: 80%;
+	}
+
+	/*Work thumbs mobile/tablet*/
+
+	div.work-thumbs {
+		display: none;
+	}
+	div.work-thumbs.mobile-work-thumbs {
+		display: block;
+	}
+
+	.row1 {
+		margin-top: -10px;
+	}
+
+	.row2 {
+		margin-top: -48px;
+	}
+
+	section.work > div.work-thumbs div.row2 > a:nth-child(2) {
+		margin-left: 14.8547%;
+	}
+
+	.work-thumbs:before {
+		left: 90px;
+		width: 76%;
+	}
+
+	div.work-thumbs div h1.section-title {
+		margin-top: 41%;
+	}
+
+}
+
+
+@media (max-width: 420px) {
+	.work-thumbs:before {
+		left: 20%;
+		width: 60%;
+	}
+
+	section.work > div.work-thumbs div.row2 > a:nth-child(2) {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+	.row1 {
+		margin-top: 10px;
+	}
+	.row2 {
+		margin-top: 10px;
+	}
+}
+
+
 
 
