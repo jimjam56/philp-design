@@ -50,9 +50,11 @@ hr {
 
 .work-detail a {
 	color: #8c8b8b;
+	display: block;
 	font-family: 'Muli', sans-serif;
 	font-size: 1.4em;
 	line-height: 2em;
+	margin-bottom: 1em;
 }
 
 .work-detail a:hover {
@@ -614,6 +616,9 @@ footer p {
 }
 
 /********WORK DETAILS PAGES********/
+
+
+
 #page-nav, #mobile-nav {
 	z-index: 5;
 	position: relative;
@@ -855,6 +860,7 @@ body > main.contact > section:nth-child(2) > div > p > a:hover {
 }
 
 @media (max-width: 991px) {
+	/*about page*/
 	.about h1 {
 		margin: 1.2em 0 0.2em 0;
 	}
@@ -863,6 +869,16 @@ body > main.contact > section:nth-child(2) > div > p > a:hover {
 	}
 	.about ul {
 		padding: 0;
+	}
+
+	/*work details img for mobile*/
+
+	.work-detail .col-md-5 {
+		padding-top: 3em;
+		padding-bottom: 1em;
+	}
+	.work-detail .col-md-6 {
+		padding-top: 0;
 	}
 }
 
