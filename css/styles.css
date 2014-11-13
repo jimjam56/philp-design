@@ -146,7 +146,7 @@ header h1 {
 }
 #title-container img {
 	width: 70%;
-	max-width: 610px;
+	max-width: 500px;
 	position: relative;
 	margin: 2em 0 0 6%;
 	opacity: .6;
