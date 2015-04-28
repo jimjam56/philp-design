@@ -552,7 +552,7 @@ div.work-thumbs div h1.section-title {
 
 /****FOOTER****/
 
-footer {
+footer, #footer {
 	background-color: #1a1a1a;
 	float: left;
 	width: 100%;
@@ -580,7 +580,7 @@ padding: 0 0 0 23px;
 	color: #ffdf61;
 }
 
-footer img {
+footer img, #footer img {
 	display: block;
 	margin: 80px auto 0 auto;
 	width: 71px;
@@ -608,7 +608,7 @@ div.social-container a i {
 	padding: 0 10px;
 }
 
-footer p {
+footer p, #footer p {
 	color: #1a1a1a;
 	font-size: .8em;
 	margin: 0;
@@ -889,7 +889,7 @@ body > main.contact > section:nth-child(2) > div > p > a:hover {
 	#footer-nav > ul {
 		padding: 0;
 	}
-	footer img {
+	footer img, #footer img {
 		margin-top: 40px;
 	}
 	/*mobile header img*/
@@ -980,6 +980,15 @@ body > main.contact > section:nth-child(2) > div > p > a:hover {
 	}
 }
 
+//rsvp styling
+.rsvp-wrap {
+	display: block;
+	width: 100%;
+}
+.rsvp-wrap iframe {
+	display: block;
+	margin: 0 auto;
+}
 
 
 
