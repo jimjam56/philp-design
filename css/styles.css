@@ -261,6 +261,10 @@ main {
 	position: relative;
 }
 
+h1 {
+	color: #70b9bf;
+}
+
 /****INTRODUCTION****/
 
 .introduction h1 {
@@ -521,6 +525,31 @@ div.work-thumbs div h1.section-title {
 }
 
 
+/***** BRANDS SECTION *****/
+section.brands h1 {
+	text-align: center;
+}
+section.brands ul {
+	font-size: 0;
+	padding: 0;
+}
+
+section.brands ul li {
+	display: inline-block;
+	font-size: 0;
+	width: 25%;
+	text-align: center;
+	margin-top: 20px;
+	margin-top: 20px;
+}
+
+section.brands ul li img {
+	width: 101px;
+	display: inline-block;
+	font-size: 16px;
+
+}
+
 /****BOTTOM CONTACT SECTION****/
 
 .contact h1 {
@@ -547,7 +576,11 @@ div.work-thumbs div h1.section-title {
 .btn-default:hover {
 	background-color: #ff9884;
 	border: 4px solid #ff9884;
-	color: #fff;
+	color: #ffffff;
+}
+
+.btn-default:hover a {
+	color: #ffffff;
 }
 
 /****FOOTER****/
@@ -866,6 +899,8 @@ body > main.contact > section:nth-child(2) > div > p > a:hover {
 		padding: 0;
 	}
 
+	
+
 	/*work details img for mobile*/
 
 	.work-detail .col-md-5 {
@@ -919,6 +954,10 @@ body > main.contact > section:nth-child(2) > div > p > a:hover {
 		font-size: 34px;
 		margin: -15px 0 35px 0;
 		width: 70%;
+	}
+
+	section.brands ul li {
+		width: 50%;
 	}
 }
 
@@ -977,6 +1016,10 @@ body > main.contact > section:nth-child(2) > div > p > a:hover {
 	/*Footer*/
 	#footer-nav ul {
 		padding: 0;
+	}
+	section.brands ul li img {
+		width: 50.5px;
+
 	}
 }
 
