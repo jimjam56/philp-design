@@ -504,12 +504,12 @@ div.work-thumbs div h1.section-title {
 	background-image: url("../img/fat-dads-thumb.png");
 }
 
-.work-thumbs a[href="halftone.html"]:before {
-	background-image: url("../img/halftone-thumb.png");
+.work-thumbs a[href="vector-portraits.html"]:before {
+	background-image: url("../img/vector-thumb.jpg");
 }
 
 .work-thumbs a[href="moto-graphics.html"]:before {
-	background-image: url("../img/graphics-thumb.png");
+	background-image: url("../img/graphics-thumb.jpg");
 }
 
 .work-thumbs a[href="thirty-bands.html"]:before {
@@ -521,7 +521,7 @@ div.work-thumbs div h1.section-title {
 }
 
 .work-thumbs a[href="undead.html"]:before {
-	background-image: url("../img/undead-thumb.png");
+	background-image: url("../img/undead-thumb.jpg");
 }
 
 
@@ -657,11 +657,11 @@ footer p, #footer p {
 	position: relative;
 }
 
-body > main > section.col-md-12 {
+body > main > section.details-title {
 	padding-bottom: 0px;
 }
 
-body > main > section.col-md-12 h2 {
+body > main > section.details-title h2 {
 	text-align: left;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 400;
@@ -683,16 +683,19 @@ body > main > section.col-md-12 h2 {
 
 
 /***Dividing lines on work deets imgs***/
-body > main > section.col-md-6.col-md-offset-1 > img {
+body > main > section.details-img {
+	padding-top: 0;
+}
+body > main > section.details-img > img {
 border-bottom: 1px solid #222222;
 padding: 1.5em 0;
 }
 
-body > main > section.col-md-6.col-md-offset-1 > img:first-child {
+body > main > section.details-img > img:first-child {
 padding: 0 0 1.5em 0;
 }
 
-body > main > section.col-md-6.col-md-offset-1 > img:last-child {
+body > main > section.details-img > img:last-child {
 border-bottom: none;
 padding: 1.5em 0 0 0;
 }
