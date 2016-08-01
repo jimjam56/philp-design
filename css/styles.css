@@ -524,6 +524,14 @@ div.work-thumbs div h1.section-title {
 	background-image: url("../img/undead-thumb.jpg");
 }
 
+.work-thumbs a[href="spec-train.html"]:before {
+	background-image: url("../img/spec-train-thumb.png  ");
+}
+
+.work-thumbs a[href="14four-wallpapers.html"]:before {
+	background-image: url("../img/wallpaper-thumb.png  ");
+}
+
 
 /***** BRANDS SECTION *****/
 section.brands h1 {
@@ -686,6 +694,11 @@ body > main > section.details-title h2 {
 body > main > section.details-img {
 	padding-top: 0;
 }
+
+body > main > section.details-img h2 {
+	padding-top: 50px;
+}
+
 body > main > section.details-img > img {
 border-bottom: 1px solid #222222;
 padding: 1.5em 0;
