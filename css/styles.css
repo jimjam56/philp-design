@@ -496,6 +496,14 @@ div.work-thumbs div h1.section-title {
 	background-image: url("../img/seven2-thumb.png");
 }
 
+.work-thumbs a[href="parkwater.html"]:before {
+	background-image: url("../img/parkwater-thumb.jpg");
+}
+
+.work-thumbs a[href="berg-creative.html"]:before {
+	background-image: url("../img/berg-thumb.jpg");
+}
+
 .work-thumbs a[href="mika.html"]:before {
 	background-image: url("../img/mika-thumb.png");
 }
